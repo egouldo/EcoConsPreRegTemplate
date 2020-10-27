@@ -28,15 +28,8 @@ shinyUI(fluidPage(theme = shinytheme("cerulean"),
 
   #### Application outline ----
   # Application title
-  headerPanel(column(12, "CREATING TRANSPARENCY CHECKLIST 1.0 (full, 36 items)", align = "center"),
-              windowTitle = "Transparency Checklist 1.0"),
-  
-  fluidRow(column(1),
-           column(10, tags$a("I prefer to fill out the short (12-item) checklist.",
-                             href="http://www.shinyapps.org/apps/ShortTransparencyChecklist/",
-                             target="_blank"), align = "center"),
-           column(1)
-  ),
+  headerPanel(column(12, "Preregistration Template for Modelling in Ecology and Conservation (0.0.9)", align = "center"),
+              windowTitle = "Preregistration Template 0.0.9"),
   br(),
   
   # The header (basic information about the paper and authors)
@@ -124,7 +117,7 @@ shinyUI(fluidPage(theme = shinytheme("cerulean"),
                    includeMarkdown("www/doc/introText.Rmd"),
                    br(),
                    tags$a(tags$img(src = "img/GitHub-Mark-32px.png"), 
-                          href = "https://github.com/BalazsAczel/TransparencyChecklist", 
+                          href = "https://github.com/egouldo/EcoConsPreRegTemplate", 
                           target = "_blank")),
   absolutePanel(
     actionBttn(inputId = "triggerIntro", label = "About", icon = icon("info-circle")),
