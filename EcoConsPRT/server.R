@@ -159,7 +159,7 @@ shinyServer(function(input, output, session) {
   observeEvent(input$studyTitle, {
     feedbackSuccess(
       inputId = "studyTitle",
-      condition = input$studyTitle != "",
+      input$studyTitle != "",
       text = NULL,
       color = "black"
     )
@@ -169,7 +169,7 @@ shinyServer(function(input, output, session) {
   observeEvent(input$authorNames, {
     feedbackSuccess(
       inputId = "authorNames",
-      condition = input$authorNames != "",
+      input$authorNames != "",
       text = NULL,
       color = "black"
     )
@@ -181,7 +181,7 @@ shinyServer(function(input, output, session) {
     if (input$correspondingEmail == "@" || input$correspondingEmail == ""){
       feedback(
         inputId   = "correspondingEmail",
-        condition = TRUE,
+        TRUE,
         text      = " ",
         color     = "black",
         icon      = NULL
@@ -189,14 +189,14 @@ shinyServer(function(input, output, session) {
     } else if (isValidEmail(input$correspondingEmail)){
       feedbackSuccess(
         inputId   = "correspondingEmail",
-        condition = TRUE,
+        TRUE,
         text      = " ",
         color     = "black"
       )
     } else {
       feedbackWarning(
         inputId   = "correspondingEmail",
-        condition = TRUE,
+        TRUE,
         text      = "Provided email appears invalid.",
         color     = "black"
       )
@@ -208,7 +208,7 @@ shinyServer(function(input, output, session) {
     if (input$linkToRepository == ""){
       feedback(
         inputId   = "linkToRepository",
-        condition = TRUE,
+        TRUE,
         text      = " ",
         color     = "black",
         icon      = NULL
@@ -216,14 +216,14 @@ shinyServer(function(input, output, session) {
     } else if (RCurl::url.exists(input$linkToRepository)){
       feedbackSuccess(
         inputId   = "linkToRepository",
-        condition = TRUE,
+        TRUE,
         text      = " ",
         color     = "black"
       )
     } else {
       feedbackWarning(
         inputId   = "linkToRepository",
-        condition = TRUE,
+        TRUE,
         text      = "The link cannot be accessed.",
         color     = "black"
       )
