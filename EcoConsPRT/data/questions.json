@@ -286,6 +286,17 @@
           "Name": "comment_availability"
         }
       ]
+    },
+    "ModelValidationEvaluation": {
+      "Name": "Model Validation and Evaluation",
+      "Label": "",
+      "Questions": [
+                {
+          "Type": "radio",
+          "Label": "the (processed) data, on which the analyses of the manuscript were based.",
+          "AnswerType": "YesNo"
+        }
+      ]
     }
   },
   "Answers": {
