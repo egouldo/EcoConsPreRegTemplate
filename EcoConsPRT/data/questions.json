@@ -25,8 +25,9 @@
   }
   ],
   "Sections" : {
-    "Preregistration": {
-      "Name": "PREREGISTRATION SECTION",
+    "ProblemFormulation": {
+      "Name": "Problem Formulation",
+      "Label": "Includes a clear specification of the problem context in which the model will be used or designed to inform. Defining the purpose of the model is critical because the model purpose influences choices at later stages of model development (Jakeman, Letcher, and Norton 2006). This includes engaging with the decision maker and/or key stakeholders (if relevant).",
       "Questions": [
         {
           "Type": "radio",
@@ -127,9 +128,9 @@
         
       ]
   },
-    "Methods": {
-      "Name": "METHODS SECTION",
-      "Label": "The manuscript fully describes...",
+    "ConceptualModel": {
+      "Name": "Define Conceptual Model",
+      "Label": "Conceptual models underpin the formal or quantitative model (Cartwright et al. 2016). The conceptual model describes the biological mechanisms relevant to the ecological problem and should capture basic premises about how the target system works, including any prior knowledge and assumptions about system processes. Conceptual models may be represented in a variety of formats – such as influence diagrams, linguistic model block diagram or bond graphs – illustrating how model drivers are linked to both outputs or observed responses, and internal (state) variables (Jakeman, Letcher, and Norton, 2006).",
       "Questions": [
         {
           "Type": "radio",
@@ -201,9 +202,9 @@
         }
       ]
     },
-    "Results": {
-      "Name": "RESULTS AND DISCUSSION SECTION",
-      "Label": "The manuscript...",
+    "FormaliseModel": {
+      "Name": "Formalise and Specify Model",
+      "Label": "Modelling approaches lie on a spectrum from correlative or phenomenological to mechanistic or process-based (Yates et al. 2018); where correlative models use mathematical functions fitted to data to describe underlying processes, and mechanistic models explicitly represent processes and details of component parts of a biological system that are expected to give rise to the data (White and Marshall 2019). A model ‘class,’ ‘family’’ or ‘type’ is often used to describe a set of models each of which has a distinct but related sampling distribution (Liu & Aitken, 2008). The model family is driven by choices about the types of variables covered and the nature of their treatment, as well as structural features of the model, such as link functions, spatial and temporal scales of processes and their interactions (Jakeman et al. 2006). ",
       "Questions": [
         {
           "Type": "radio",
@@ -243,8 +244,8 @@
         }
       ]
     },
-    "Availability": {
-      "Name": "DATA, CODE, AND MATERIALS AVAILABILITY SECTION",
+    "ModelFitting": {
+      "Name": "Model Calibration, Fitting & Checking",
       "Label": "The following have been made publicly available...",
       "Questions": [
         {
