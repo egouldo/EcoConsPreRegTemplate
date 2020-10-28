@@ -105,7 +105,7 @@ shinyUI(fluidPage(theme = shinytheme("cerulean"),
 
   # Show tooltip which says that the download is not ready
   shinyBS::bsTooltip(id = "report",
-                     title = "A report can be downloaded after all questions in each section have been answered.",
+                     title = "A report can be downloaded after all questions in each section have been answered. Please respond to all preregistration items, please explain if any items are irrelevant.",
                      # Please, respond to all displayed items to download the pdf report (comments are optional).
                      trigger = "manual",
                      placement = "right"),

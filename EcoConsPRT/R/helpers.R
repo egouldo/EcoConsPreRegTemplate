@@ -27,7 +27,7 @@ renderSection <- function(section){
 }
 
 customField <- function(ind){
-  # is the input is not question, it is assumed that it is some quidance text in between the items
+  # is the input is not question, it is assumed that it is some guidance text in between the items
   if(ind$Type == "text"){
     
     # the quidance text can itself be conditional

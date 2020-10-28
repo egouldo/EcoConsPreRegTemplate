@@ -24,7 +24,7 @@ sectionsList <- questions$Sections
 answerList <- questions$Answers
 
 
-# Name the questions (ind_1 ... ind_n) - this slightly reduces the tedious filling in of quesiton numbers in .json
+# Name the questions (ind_1 ... ind_n) - this slightly reduces the tedious filling in of question numbers in .json
 # and reduces the likelihood of a manual mistake.
 ind <- 1
 sectionsList <- lapply(sectionsList, function(Sec){
